@@ -191,7 +191,7 @@ class Evaluator(object):
 
         if self.args.report_score:
             self.test_bleu()
-            # self.test_rouge()
+            self.test_rouge()
             self.logger.info("UNIQUE NUM: {}/{}".format(len(Counter(summaries)), len(summaries)))
         if self.args.model not in ["textRank"]:
             self.model.train()
