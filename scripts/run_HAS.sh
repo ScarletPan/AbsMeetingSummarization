@@ -1,0 +1,22 @@
+export PYTHONPATH=.
+python main.py \
+    --data-path data/ \
+    --model hybrid-boundary-encdec \
+    --dataset ami \
+    --epoch-num 15 \
+    --batch-size 1 \
+    --hidden-size 512 \
+    --word-embed-size 256 \
+    --dropout 0.5 \
+    --beam-size 1 \
+    --print-every 20 \
+    --encoder-max-len 6000 \
+    --decoder-max-len 160 \
+    --use-cuda \
+    --path-prefix FIX-50 \
+    --feature_rich \
+    --n_layers 1 \
+    -max_grad_norm 5 \
+    -lr 1.0
+    -learning_rate_decay' 0.5
+    --alpha 0.9985
