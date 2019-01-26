@@ -14,9 +14,9 @@ data/
 The description of records in ```*.json``` is as follows:
 ```json
 {
-    "agents": "Who is the speaker in one sentence", # list of char
-    "st_times": "Start time of one sentence", # list of float
-    "end_times": "End time of one sentence", # list of float
+    "agents": "Who is the speaker in one sentence", // list of char
+    "st_times": "Start time of one sentence", // list of float
+    "end_times": "End time of one sentence",  // list of float
     "article_sents": "Sentences of this meeting", 
     "article_pos_tags": "Pos tags for each token",
     "article_ner_tags": "Ner tags for each token", 
